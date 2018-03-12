@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.scss';
-class App extends Component {
-  render() {
-    return (
-      <div className="head">
-        <h4>welcome to my webzone</h4>
-      </div>
-    );
-  }
-}
+
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Main from './Main';
+
+const App = () => (
+  <div className="app">
+    <Header />
+    <Main />
+    <Footer />
+  </div>
+)
 
 export default App;
