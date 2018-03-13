@@ -31,9 +31,9 @@ class Header extends Component {
       <div className="child">
         <Link to='/reviews' style={linkStyle}>Movie Reviews</Link>
       </div>
-      <div className="child">
+      {/* <div className="child">
         <Link to='/hn' style={linkStyle}>Hacker News</Link>
-      </div>
+      </div> */}
       <div className="about" style={{paddingLeft: '10px'}}>
         <button onClick={this.toggleModal}>
           About
