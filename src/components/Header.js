@@ -24,6 +24,7 @@ class Header extends Component {
 
     return (
     <div className="bar">
+      <h1 className="child">Bryantvolk.com</h1>
       <div className="child">
         <Link to='/' style={linkStyle}>Home</Link>
       </div>
