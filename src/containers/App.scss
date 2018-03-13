@@ -35,3 +35,11 @@ a:hover {
   background-color: rgba(129, 112, 148, 0.2);
   box-shadow: 5px 5px;
 }
+
+.review {
+  transition: all 0.2s;
+}
+
+.review:hover {
+  box-shadow: rgb(76, 0, 160) 5px 5px 5px 5px;
+}

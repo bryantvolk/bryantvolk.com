@@ -29,7 +29,7 @@ class Header extends Component {
         <Link to='/' style={linkStyle}>Home</Link>
       </div>
       <div className="child">
-        <Link to='/reviews' style={linkStyle}>Reviews</Link>
+        <Link to='/reviews' style={linkStyle}>Movie Reviews</Link>
       </div>
       <div className="child">
         <Link to='/hn' style={linkStyle}>Hacker News</Link>
