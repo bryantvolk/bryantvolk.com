@@ -37,11 +37,12 @@ class About extends React.Component {
     return (
       <div className="backdrop" style={backdropStyle}>
         <div className="modal" style={modalStyle}>
-          <h2>Built as a weekend (plus a few days) project, this webapp uses:</h2>
-          <h4>React in the frontend</h4>
-          <h4>Styled with SCSS and flexbox</h4>
-          <h4>Dropwizard in the backend (Jetty for HTTP, Jersey for REST, Jackson for JSON)</h4>
-          <h4>My domain is hosted on a DigitalOcean droplet with NGINX running as the webserver</h4>
+          <h2>Built as a weekend project, this webapp uses:</h2><br />
+          <h3><a href="https://reactjs.org/">React</a> in the frontend</h3>
+          <h3>Styled with <a href="https://sass-lang.com/">SCSS</a> and <a href="https://www.w3schools.com/css/css3_flexbox.asp">flexbox</a></h3>
+          <h3><a href="http://www.dropwizard.io/1.2.2/docs/">Dropwizard</a> in the backend (<a href="https://www.eclipse.org/jetty/">Jetty</a> 
+          for HTTP, <a href="https://jersey.github.io/">Jersey</a> for REST, <a href="https://github.com/FasterXML/jackson">Jackson</a> for JSON)</h3>
+          <h3>My domain is hosted on a DigitalOcean droplet with NGINX running as the webserver</h3><br />
           <div className="footer">
             <button onClick={this.props.onClose}>
               Close
@@ -53,7 +54,7 @@ class About extends React.Component {
   }
 }
 
-About.PropTypes = {
+About.propTypes = {
   onClose: PropTypes.func.isRequired,
   show: PropTypes.bool,
 };

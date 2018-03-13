@@ -19,7 +19,19 @@ button {
   text-align:center;
   transition: all 0.2s;
 }
+
 button:hover {
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: rgb(129, 112, 148);
+}
+
+a {
+  color:green;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #000000;
+  background-color: rgba(129, 112, 148, 0.2);
+  box-shadow: 5px 5px;
 }

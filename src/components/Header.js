@@ -19,8 +19,7 @@ class Header extends Component {
   render() {
     const linkStyle = {
       textDecoration: 'none',
-      color: 'green',
-      fontSize: '36px',
+      fontSize: '24px',
     };
 
     return (
