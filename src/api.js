@@ -4,5 +4,5 @@ import axios from 'axios';
 const baseURL = 'http://localhost:8080';
 
 export function getReviews() {
-  return axios.get(baseURL + '/reviews');
+  return axios.get(baseURL + '/reviews')
 }
