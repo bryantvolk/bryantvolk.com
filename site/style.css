@@ -1,0 +1,70 @@
+:root {
+  --bg: #1f1d45;
+  --fg: #f8dcc0;
+  --muted: #c8faf4;
+  --link: #efc11a;
+  --link-hover: #9eff6e;
+  --cat: #f6f5fb;
+  --bed: #b48cff;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+main {
+  min-height: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 7vw, 2.5rem);
+  font-weight: 600;
+}
+
+p { margin: 0.25rem 0 1rem; color: var(--muted); }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+a:hover, a:focus-visible { color: var(--link-hover); text-decoration: underline; }
+
+#cat {
+  margin: 2.5rem 0 0;
+  font-size: clamp(11px, 3.4vw, 16px);
+  line-height: 1.15;
+  text-align: left;
+  color: var(--cat);
+  cursor: pointer;
+  user-select: none;
+}
+
+#cat .cat { color: var(--cat); }
+#cat .bed { color: var(--bed); }
